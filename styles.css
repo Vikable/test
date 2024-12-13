@@ -1,0 +1,132 @@
+.main-collection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 110px 40px;
+  color: var(--text-color);
+  font-size: 20px;
+}
+main-collection p {
+  color: var(--title-transparent-color);
+}
+.main-collection__title {
+  font-size: 45px;
+  text-transform: uppercase;
+  color: var(--title-color);
+}
+
+.main-collection__title span {
+  color: var(--accent-color);
+}
+
+.main-collection__description {
+  text-transform: none;
+  margin: 0 0 40px;
+}
+
+.main-collection__header,
+.main-collection__description {
+  text-align: center;
+  width: 100%;
+}
+
+.main-collection__category-titles {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.main-collection__category-title {
+  background: none;
+  border: none;
+  box-shadow: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.main-collection__category-title:hover,
+.main-collection__category-title--active {
+  background-color: #ddd;
+}
+
+.main-collection__categories {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.main-collection__category {
+  display: none;
+}
+
+.main-collection__category--active {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.main-collection__product {
+  padding: 10px;
+  margin: 10px;
+  width: auto;
+}
+@media (min-width: 320px) {
+  .main-collection__product {
+    width: 320px;
+  }
+}
+@media (min-width: 1200px) {
+  .main-collection__product {
+    width: 400px;
+  }
+}
+
+.main-collection__product-image {
+  max-width: 100%;
+  height: auto;
+  transition: all 0.3s ease;
+}
+@media (min-width: 1200px) {
+  .main-collection__product-image {
+    width: 370px;
+    height: 370px;
+  }
+}
+
+.main-collection__product-name {
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: 18px;
+  margin: 24px 0 0;
+}
+
+.main-collection__product-price {
+  color: var(--accent-color);
+  font-weight: bold;
+  margin: 16px 0 0;
+}
+.main-collection__product button:hover {
+  background-color: var(--accent-color);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.main-collection__product button {
+  background-color: var(--title-color);
+  color: var(--title-alternative-color);
+  padding: 15px 25px;
+  border: 0px;
+  font-weight: bold;
+  font-size: 15px;
+  margin: 24px 0 0;
+}
+
+.main-collection__category-titles button {
+  background: none;
+  border: none;
+  box-shadow: none;
+  color: var(--title-transparent-color);
+  font-size: 18px;
+  text-align: center;
+}
