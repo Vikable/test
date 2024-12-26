@@ -13,6 +13,7 @@ main-collection p {
   color: var(--title-color);
 }
 
+
 .main-collection__title span {
   color: var(--accent-color);
 }

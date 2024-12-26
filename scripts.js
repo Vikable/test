@@ -22,7 +22,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  // Встановити першу категорію активною за замовчуванням
   if (categoryTitles.length > 0) {
     categoryTitles[0].click();
   }
